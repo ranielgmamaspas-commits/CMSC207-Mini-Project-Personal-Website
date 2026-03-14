@@ -10,7 +10,6 @@ This project is a personal website created as part of the CMSC 207 course.
 - Mobile responsive design using CSS media queries
 
 ## Project Structure
-project-folder/
 ├── index.html
 ├── style.css
 ├── script.js
