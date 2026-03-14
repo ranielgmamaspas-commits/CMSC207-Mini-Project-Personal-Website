@@ -1,0 +1,340 @@
+/* Basic reset and setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Container for centering content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #93c5fd;
+}
+
+/* Home section */
+.home-section {
+    background-color: #eff6ff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* About section */
+.about-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* About image container */
+.about-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 360px;
+}
+/* Profile image styling */
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #2563eb;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Fun fact button */
+.fun-fact-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for button */
+.fun-fact-btn:hover {
+    background-color: #1e3a8a;
+}
+
+.fun-fact-text {
+    margin-top: 15px;
+    font-style: italic;
+    color: #2563eb;
+    font-weight: bold;
+    min-height: 60px;
+    text-align: center;
+}
+
+/* Hobbies section */
+.hobbies-section {
+    padding: 60px 0;
+    background-color: #eff6ff;
+}
+
+.hobbies-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 40px;
+}
+
+/* Grid layout for hobby cards */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.hobby-card {
+    background-color: white;
+    border: 2px solid #2563eb;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for hobby cards */
+.hobby-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Hobby image styling */
+.hobby-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.hobby-card h3 {
+    color: #1e3a8a;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    color: #555;
+    line-height: 1.6;
+}
+/* Contact section */
+.contact-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1e3a8a;
+    margin-bottom: 40px;    
+}
+
+.contact-section p {
+    text-align: center;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s, color 0.3s;
+}
+
+
+.contact-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Hover effect: lift up and change label color */
+.contact-item:hover {
+    transform: translateY(-5px);
+    color: #2563eb;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 15px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .contact-icons {
+        gap: 30px;
+    }
+}
+
+/* Responsive design for mobile phones */
+@media (max-width: 480px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .home-section h1 {
+        font-size: 28px;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section h2,
+    .hobbies-section h2,
+    .contact-section h2 {
+        font-size: 26px;
+    }
+
+    .contact-icons {
+        gap: 25px;
+    }
+
+    .contact-item img {
+        width: 50px;
+        height: 50px;
+    }
+}
