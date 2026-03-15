@@ -34,8 +34,8 @@ This project is a personal website created as part of the CMSC 207 course.
 2. No server or installation needed — it runs entirely in the browser.
 
 ## Technologies Used
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 
 ## Author
